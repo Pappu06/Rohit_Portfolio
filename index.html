@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Kumar — Cinematic Video Editor | Storytelling Through Film</title>
+    <meta name="description" content="Rohit Kumar is a professional cinematic video editor specializing in wedding films, commercial ads, YouTube content, music videos, and motion graphics.">
+    <meta name="keywords" content="video editor, cinematic, wedding films, commercial ads, YouTube editing, Rohit Kumar">
+    <meta name="author" content="Rohit Kumar">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cursor Spotlight -->
+    <div class="cursor-spotlight" id="cursorSpotlight"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particlesCanvas"></canvas>
+
+    <!-- Noise Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-text">ROHIT</span>
+                <span class="logo-accent">KUMAR</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Clients</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-subtitle animate-letters" data-delay="200">CINEMATIC VIDEO EDITOR</p>
+                <h1 class="hero-title">
+                    <span class="animate-letters" data-delay="600">ROHIT</span>
+                    <span class="animate-letters gold-text" data-delay="900">KUMAR</span>
+                </h1>
+                <p class="hero-description animate-fade" data-delay="1400">
+                    I transform raw footage into powerful visual stories, commercial advertisements, wedding films, music videos, and cinematic content.
+                </p>
+                <div class="hero-buttons animate-fade" data-delay="1800">
+                    <a href="#portfolio" class="btn btn-primary magnetic-btn">
+                        <span class="btn-icon">▶</span>
+                        <span>Watch Showreel</span>
+                        <span class="btn-shine"></span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary magnetic-btn">
+                        <span class="btn-icon">💼</span>
+                        <span>Hire Me</span>
+                        <span class="btn-shine"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade" data-delay="500">
+                <div class="hero-portrait-frame">
+                    <div class="portrait-glow"></div>
+                    <div class="portrait-ring portrait-ring-1"></div>
+                    <div class="portrait-ring portrait-ring-2"></div>
+                    <img src="assets/images/rohit-portrait.png" alt="Rohit Kumar — Cinematic Video Editor" class="hero-portrait">
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About <span class="gold-text">Rohit</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-img-wrapper">
+                        <img src="assets/images/rohit-portrait.png" alt="Rohit Kumar">
+                        <div class="about-img-border"></div>
+                    </div>
+                    <p class="about-signature">Rohit Kumar</p>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3 class="about-heading">Hi, I'm <span class="gold-text">Rohit Kumar</span></h3>
+                    <p class="about-text">
+                        A passionate Video Editor specializing in cinematic storytelling, YouTube content, wedding films, advertisements, reels, and social media content. My goal is to transform ordinary footage into visually compelling stories that leave a lasting impact.
+                    </p>
+                    <p class="about-text">
+                        With over 5 years of experience in the industry, I've had the privilege of working with diverse clients — from independent creators to established brands. Every project is an opportunity to push creative boundaries and deliver something extraordinary.
+                    </p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-number" data-target="150">0</span>
+                            <span class="about-stat-suffix">+</span>
+                            <span class="about-stat-label">Projects</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-number" data-target="5">0</span>
+                            <span class="about-stat-suffix">+</span>
+                            <span class="about-stat-label">Years</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-number" data-target="90">0</span>
+                            <span class="about-stat-suffix">+</span>
+                            <span class="about-stat-label">Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & <span class="gold-text">Software</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card reveal-up" data-delay="0">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/><text x="24" y="29" text-anchor="middle" fill="currentColor" font-size="12" font-weight="bold">Pr</text></svg>
+                    </div>
+                    <h4 class="skill-name">Adobe Premiere Pro</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="50">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/><text x="24" y="29" text-anchor="middle" fill="currentColor" font-size="12" font-weight="bold">Ae</text></svg>
+                    </div>
+                    <h4 class="skill-name">Adobe After Effects</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="100">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/><text x="24" y="29" text-anchor="middle" fill="currentColor" font-size="12" font-weight="bold">DR</text></svg>
+                    </div>
+                    <h4 class="skill-name">DaVinci Resolve</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="150">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/><text x="24" y="29" text-anchor="middle" fill="currentColor" font-size="12" font-weight="bold">Ps</text></svg>
+                    </div>
+                    <h4 class="skill-name">Photoshop</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="200">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/><text x="24" y="29" text-anchor="middle" fill="currentColor" font-size="12" font-weight="bold">Lr</text></svg>
+                    </div>
+                    <h4 class="skill-name">Lightroom</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="250">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/><text x="24" y="29" text-anchor="middle" fill="currentColor" font-size="12" font-weight="bold">CC</text></svg>
+                    </div>
+                    <h4 class="skill-name">CapCut Pro</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="300">
+                    <div class="skill-icon">🎨</div>
+                    <h4 class="skill-name">Color Grading</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="350">
+                    <div class="skill-icon">✨</div>
+                    <h4 class="skill-name">Motion Graphics</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="400">
+                    <div class="skill-icon">🎵</div>
+                    <h4 class="skill-name">Sound Design</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="450">
+                    <div class="skill-icon">📺</div>
+                    <h4 class="skill-name">YouTube Editing</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="500">
+                    <div class="skill-icon">📱</div>
+                    <h4 class="skill-name">Instagram Reels</h4>
+                </div>
+                <div class="skill-card reveal-up" data-delay="550">
+                    <div class="skill-icon">💒</div>
+                    <h4 class="skill-name">Wedding Films</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SHOWREEL SECTION ===================== -->
+    <section class="section showreel-section" id="showreel">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Watch</span>
+                <h2 class="section-title">Featured <span class="gold-text">Showreel</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="showreel-wrapper reveal-up">
+                <div class="showreel-player">
+                    <img src="assets/images/commercial-thumbnail.png" alt="Showreel" class="showreel-poster">
+                    <button class="showreel-play-btn" aria-label="Play showreel">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" stroke="#D4AF37" stroke-width="2"/>
+                            <polygon points="32,24 58,40 32,56" fill="#D4AF37"/>
+                        </svg>
+                    </button>
+                    <div class="showreel-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO SECTION ===================== -->
+    <section class="section portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gold-text">Portfolio</span></h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="portfolio-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="youtube">YouTube</button>
+                <button class="filter-btn" data-filter="travel">Travel</button>
+                <button class="filter-btn" data-filter="music">Music Videos</button>
+                <button class="filter-btn" data-filter="reels">Reels</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal-up" data-category="wedding">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/wedding-thumbnail.png" alt="Wedding Film — Eternal Moments">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-play" aria-label="Play video">
+                                <svg viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="#D4AF37" stroke-width="2"/>
+                                    <polygon points="24,18 44,30 24,42" fill="#D4AF37"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Wedding Film</span>
+                        <h4 class="portfolio-title">Eternal Moments</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-up" data-category="commercial">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/commercial-thumbnail.png" alt="Commercial Ad — Brand Elevation">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-play" aria-label="Play video">
+                                <svg viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="#D4AF37" stroke-width="2"/>
+                                    <polygon points="24,18 44,30 24,42" fill="#D4AF37"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Commercial Ad</span>
+                        <h4 class="portfolio-title">Brand Elevation</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-up" data-category="music">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/music-video-thumbnail.png" alt="Music Video — Neon Dreams">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-play" aria-label="Play video">
+                                <svg viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="#D4AF37" stroke-width="2"/>
+                                    <polygon points="24,18 44,30 24,42" fill="#D4AF37"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Music Video</span>
+                        <h4 class="portfolio-title">Neon Dreams</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-up" data-category="travel">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/travel-thumbnail.png" alt="Travel Film — Wanderlust">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-play" aria-label="Play video">
+                                <svg viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="#D4AF37" stroke-width="2"/>
+                                    <polygon points="24,18 44,30 24,42" fill="#D4AF37"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Travel Film</span>
+                        <h4 class="portfolio-title">Wanderlust Chronicles</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-up" data-category="youtube">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/youtube-thumbnail.png" alt="YouTube — Content Mastery">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-play" aria-label="Play video">
+                                <svg viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="#D4AF37" stroke-width="2"/>
+                                    <polygon points="24,18 44,30 24,42" fill="#D4AF37"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">YouTube</span>
+                        <h4 class="portfolio-title">Content Mastery</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item reveal-up" data-category="reels">
+                    <div class="portfolio-thumb">
+                        <img src="assets/images/reels-thumbnail.png" alt="Reels — Viral Moments">
+                        <div class="portfolio-overlay">
+                            <button class="portfolio-play" aria-label="Play video">
+                                <svg viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="#D4AF37" stroke-width="2"/>
+                                    <polygon points="24,18 44,30 24,42" fill="#D4AF37"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="portfolio-category">Instagram Reels</span>
+                        <h4 class="portfolio-title">Viral Moments</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATISTICS SECTION ===================== -->
+    <section class="section stats-section" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal-up">
+                    <span class="stat-number counter" data-target="150">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-card reveal-up" data-delay="100">
+                    <span class="stat-number counter" data-target="5">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Years of Experience</span>
+                </div>
+                <div class="stat-card reveal-up" data-delay="200">
+                    <span class="stat-number counter" data-target="90">0</span>
+                    <span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-card reveal-up" data-delay="300">
+                    <span class="stat-number counter" data-target="12">0</span>
+                    <span class="stat-suffix">M+</span>
+                    <span class="stat-label">Views Generated</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">What I Offer</span>
+                <h2 class="section-title">My <span class="gold-text">Services</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-up" data-delay="0">
+                    <div class="service-icon">💒</div>
+                    <h3 class="service-title">Wedding Films</h3>
+                    <p class="service-desc">Cinematic wedding films that capture every emotion, every detail, and every unforgettable moment of your special day.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="100">
+                    <div class="service-icon">📺</div>
+                    <h3 class="service-title">YouTube Editing</h3>
+                    <p class="service-desc">Professional editing for YouTubers — engaging intros, seamless cuts, color grading, and retention-boosting techniques.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="200">
+                    <div class="service-icon">📱</div>
+                    <h3 class="service-title">Instagram Reels</h3>
+                    <p class="service-desc">Scroll-stopping reels with trending transitions, dynamic pacing, and eye-catching visual effects.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="300">
+                    <div class="service-icon">🎵</div>
+                    <h3 class="service-title">Music Videos</h3>
+                    <p class="service-desc">Cinematic music video editing with creative color grading, visual effects, and beat-synced transitions.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="400">
+                    <div class="service-icon">📢</div>
+                    <h3 class="service-title">Commercial Ads</h3>
+                    <p class="service-desc">High-impact commercial videos for brands — product launches, social media ads, and promotional content.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal-up" data-delay="500">
+                    <div class="service-icon">✨</div>
+                    <h3 class="service-title">Motion Graphics</h3>
+                    <p class="service-desc">Custom motion graphics, animated logos, title sequences, and dynamic visual elements for any project.</p>
+                    <div class="service-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS SECTION ===================== -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">What They Say</span>
+                <h2 class="section-title">Client <span class="gold-text">Testimonials</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-up" data-delay="0">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Rohit transformed our wedding footage into a cinematic masterpiece. Every frame was filled with emotion and beauty. He truly understands storytelling."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div>
+                            <h5 class="testimonial-name">Ananya & Vikram</h5>
+                            <span class="testimonial-role">Wedding Film Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-up" data-delay="150">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Amazing editor! Delivered before the deadline and the quality was beyond our expectations. Our YouTube channel grew 300% after working with Rohit."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">R</div>
+                        <div>
+                            <h5 class="testimonial-name">Raj Patel</h5>
+                            <span class="testimonial-role">YouTube Creator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-up" data-delay="300">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Professional, creative, and incredibly reliable. Rohit's commercial ad for our brand generated over 2M views and significantly boosted our sales."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">S</div>
+                        <div>
+                            <h5 class="testimonial-name">Sneha Kapoor</h5>
+                            <span class="testimonial-role">Brand Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WORKFLOW SECTION ===================== -->
+    <section class="section workflow-section" id="workflow">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">How I Work</span>
+                <h2 class="section-title">Editing <span class="gold-text">Process</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="workflow-timeline">
+                <div class="workflow-step reveal-left" data-delay="0">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Consultation</h4>
+                        <p class="step-desc">Understanding your vision, goals, and project requirements.</p>
+                    </div>
+                </div>
+                <div class="workflow-step reveal-right" data-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Footage Collection</h4>
+                        <p class="step-desc">Gathering and organizing all raw footage and assets.</p>
+                    </div>
+                </div>
+                <div class="workflow-step reveal-left" data-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Editing</h4>
+                        <p class="step-desc">Crafting the narrative with precise cuts, transitions, and pacing.</p>
+                    </div>
+                </div>
+                <div class="workflow-step reveal-right" data-delay="300">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Color Grading</h4>
+                        <p class="step-desc">Applying cinematic color science for the perfect mood and tone.</p>
+                    </div>
+                </div>
+                <div class="workflow-step reveal-left" data-delay="400">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Sound Design</h4>
+                        <p class="step-desc">Professional audio mixing, music selection, and sound effects.</p>
+                    </div>
+                </div>
+                <div class="workflow-step reveal-right" data-delay="500">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h4 class="step-title">Final Delivery</h4>
+                        <p class="step-desc">Export in multiple formats with revisions until you're 100% satisfied.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TOOLS SECTION ===================== -->
+    <section class="section tools-section" id="tools">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Arsenal</span>
+                <h2 class="section-title">Tools I <span class="gold-text">Use</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="tools-grid reveal-up">
+                <div class="tool-item">
+                    <div class="tool-icon-box">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="#00005B"/><text x="24" y="30" text-anchor="middle" fill="#9999FF" font-size="14" font-weight="bold">Pr</text></svg>
+                    </div>
+                    <span>Premiere Pro</span>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon-box">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="#00005B"/><text x="24" y="30" text-anchor="middle" fill="#9999FF" font-size="14" font-weight="bold">Ae</text></svg>
+                    </div>
+                    <span>After Effects</span>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon-box">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="#2D2D2D"/><text x="24" y="30" text-anchor="middle" fill="#FF6B35" font-size="12" font-weight="bold">DR</text></svg>
+                    </div>
+                    <span>DaVinci Resolve</span>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon-box">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="#001E36"/><text x="24" y="30" text-anchor="middle" fill="#31A8FF" font-size="14" font-weight="bold">Ps</text></svg>
+                    </div>
+                    <span>Photoshop</span>
+                </div>
+                <div class="tool-item">
+                    <div class="tool-icon-box">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="8" fill="#1D3A4A"/><text x="24" y="30" text-anchor="middle" fill="#65C8FF" font-size="14" font-weight="bold">Lr</text></svg>
+                    </div>
+                    <span>Lightroom</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Create Something <span class="gold-text">Amazing</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3 class="contact-heading">Let's bring your vision to life.</h3>
+                    <p class="contact-text">Whether it's a wedding film, a commercial project, or a YouTube channel — I'm here to make it happen.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:rohitkumar1372003@gmail.com" class="contact-link">
+                            <div class="contact-link-icon">✉</div>
+                            <div>
+                                <span class="contact-link-label">Email</span>
+                                <span class="contact-link-value">rohitkumar1372003@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+917992288240" class="contact-link">
+                            <div class="contact-link-icon">📞</div>
+                            <div>
+                                <span class="contact-link-label">Phone</span>
+                                <span class="contact-link-value">+91 79922 88240</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/917992288240" class="contact-link" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">💬</div>
+                            <div>
+                                <span class="contact-link-label">WhatsApp</span>
+                                <span class="contact-link-value">+91 79922 88240</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/rohitkumar__013?utm_source=qr&igsh=MXZraWlyc253bWM2NQ==" class="contact-link" target="_blank" rel="noopener">
+                            <div class="contact-link-icon">📷</div>
+                            <div>
+                                <span class="contact-link-label">Instagram</span>
+                                <span class="contact-link-value">@rohitkumar</span>
+                            </div>
+                        </a>
+                       
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-right">
+                   
+                <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <div class="about-img-wrapper">
+                        <img src="assets/images/bottom-image.png" alt="Rohit Kumar">
+                        <div class="about-img-border"></div>
+                    </div>
+                    <p class="about-signature">Rohit Kumar</p>
+                </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">
+                        <span class="logo-text">ROHIT</span>
+                        <span class="logo-accent">KUMAR</span>
+                    </h3>
+                    <p class="footer-tagline">Video Editor</p>
+                    <p class="footer-motto">Crafting Stories Frame by Frame.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/rohitkumar__013?utm_source=qr&igsh=MXZraWlyc253bWM2NQ==" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                        </a>
+                        <a href="https://wa.me/917992288240" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rohit Kumar. All rights reserved.</p>
+                <p>Crafted with ❤ and Cinematic Passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
